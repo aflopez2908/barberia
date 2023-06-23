@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>contactanos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_pagina2.css">
+
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="caja">
+
+        <h1>
+            <img src="imagenes/imagenes_pag2/logo.png"
+                 alt="logo de la barberia">
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="primerapagina_home.html">home</a>
+                </li>
+
+                <li>
+                    <a href="pagina%202.html">productos</a>
+                </li>
+                <li>
+                    <a href="contactos.html">contacto</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+    </div>
+
+
+</header>
+
+<main>
+    <form>
+
+
+        <label for="nombreyapellido"> nombre y apellido</label>
+        <input type="text" id="nombreyapellido" class="padron" required>
+
+        <label for="correoelectronico">correo electronico</label>
+        <input type="email" id="correoelectronico" class="padron" placeholder="tucorreoelectronico@dominio.com">
+
+        <label for="telefono">telefono</label>
+        <input type="tel" id="telefono" class="padron" required placeholder="XXX-XXX-XXXX">
+
+        <label for="mensaje"> dejanos un mensaje</label>
+        <textarea cols="70" rows="10" id="mensaje" class="padron"></textarea>
+
+
+        <fieldset>
+
+            <legend>como le gustaria que lo contactemos</legend>
+
+            <label for="radio_email"><input type="radio" name="contacto" value="email" id="radio_email">email</label>
+
+
+            <label for="radio_telefono"><input type="radio" name="contacto" value="telefono" id="radio_telefono">telefono</label>
+
+
+            <label for="radio_whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio_whatsapp"
+                                               checked>whatsapp</label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend> en que horario prefiere ser atendido?</legend>
+
+            <select>
+                <option> Mañana</option>
+                <option> Tarde</option>
+                <option> Noche</option>
+            </select>
+
+            <label><input type="checkbox" class="checkbox" checked> ¿le gustaria recibir novedades de la barberia?
+            </label>
+
+
+            <input type="submit" value="enviar formulario" class="enviar">
+
+        </fieldset>
+
+
+    </form>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    dia
+
+                </th>
+
+                <th>
+
+                    horario
+
+                </th>
+
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+            <tr>
+
+                <td>
+                    lunes
+
+                </td>
+
+                <td>
+
+                    8am - 10pm
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    martes
+
+                </td>
+
+                <td>
+
+                    8am - 10pm
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    Miercoles
+
+                </td>
+
+                <td>
+
+                    8am - 10pm
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    miercoles
+
+                </td>
+
+                <td>
+
+                    8am - 10pm
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    jueves
+
+                </td>
+
+                <td>
+
+                    8am - 10pm
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    viernes
+
+                </td>
+
+                <td>
+
+                    8am - 10pm
+
+                </td>
+
+            </tr>
+        </tbody>
+
+
+    </table>
+
+</main>
+
+
+<footer>
+
+    <img src="imagenes/imagenes_pag2/logo-blanco.png"
+         alt="logo blanco pie de pagina">
+    <p class="textcopy">&copy Copyright felipe russi 2020</p>
+
+</footer>
+
+
+</body>
+
+
+</html>
