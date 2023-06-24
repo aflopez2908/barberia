@@ -2,8 +2,6 @@
 .encabezado{
     background-image: url(../imagenes/imagenes_pag1/baner_imagen.jpg);
     background-size:60rem;
-
-
     display: flex;
     justify-content: center;
     padding-right: 2rem;
@@ -13,11 +11,11 @@
 .encabezado_texto{
 
     background-color: white;
+    padding: 5rem;
     width: 40rem;
     height: fit-content;
     position: relative;
     top: 3rem;
-    left: 3rem;
     border-radius: 1rem;
     text-align: center;
 
