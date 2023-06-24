@@ -1,0 +1,34 @@
+
+.encabezado{
+    background-image: url(../imagenes/imagenes_pag1/baner_imagen.jpg);
+    background-size:60rem;
+
+
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    width: auto;
+    height: 500px;
+}
+.encabezado_texto{
+
+    background-color: white;
+    width: 40rem;
+    height: fit-content;
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+
+
+}
+.encabezado_texto h2{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.encabezado h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
