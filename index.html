@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style_pagina2.css">
+    <link rel="stylesheet" href="css/style_pagina2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -20,11 +21,11 @@
     <link rel="stylesheet" href="css/encabezado.css">
     <link rel="stylesheet" href="css/productos.css">
     <link rel="stylesheet" href="css/carusel.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style_pagina2.css">    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-    <title>BARBERIA ALURA- home</title>
+    <title>BARBERIA YARDLEY- home</title>
 
 </head>
 
@@ -32,21 +33,29 @@
     <header>
 
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid text-body">
-                <div>
-                    <img class="logo" src="imagenes/imagenes_pag1/yardley_logo.png" alt="logo de la barberia">
+        <nav class="navbar navbar-expand-lg bg-secondary ">
+            <div class="container-fluid">
+              <!-- Logo dentro de navbar-brand con restricción de tamaño -->
+              <a class="navbar-brand" href="primerapagina_home.html">
+                <img src="imagenes/imagenes_pag1/yardley_logo.png" alt="Logo de la Barbería" class="logo img-fluid">
+              </a>
+              <!-- Botón hamburguesa para dispositivos móviles -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Menú de navegación -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active text-light" aria-current="page" href="primerapagina_home.html">Home</a>
+                  <a class="nav-link text-light" href="pagina%202.html">Features</a>
+                  <a class="nav-link text-light" href="contactos.html">Pricing</a>
+                  <button class="btnActionCall btn-light btn-sm">Reserva ahora</button>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active text-light" aria-current="page"
-                            href="primerapagina_home.html">Home</a>
-                        <a class="nav-link text-light" href="pagina%202.html">Features</a>
-                        <a class="nav-link text-light" href="contactos.html">Pricing</a>
-                    </div>
-                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
+          
 
 
 
@@ -82,60 +91,161 @@
             </button>
         </div>
 
-
-
-        <div class="location d-flex justify-content-around p-3">
-
-            <div class="location_description">
-
-                <h4>ubicacion</h4>
-                <h3>localizacion</h3>
-                <ul class="location_list">
-                    <li>servicio de calidad con tiempo exepcional</li>
-                    <li>asesoria gratis</li>
-                    <li>atencion especial dia de cumpleaños</li>
-                    <li>plan preferencial</li>
-                </ul>
-
-                <button type="button" class="btn btn-outline-primary">agenda con nosotros</button>
-
-
+        <section id="about-us" class="py-5 bg-secondary text-light">
+            <div class="container">
+              <div class="row align-items-center">
+                <!-- Texto descriptivo -->
+                <div class="col-md-6">
+                  <h2>Acerca de Nosotros</h2>
+                  <p>
+                    En <strong>Yardley</strong> nos dedicamos a brindar servicios de alta calidad,
+                    combinando tradición y modernidad para ofrecerte una experiencia única. Nuestro compromiso es
+                    realzar tu estilo con atención personalizada, asesoría gratuita y detalles que marcan la diferencia.
+                  </p>
+                </div>
+                <!-- Imagen representativa -->
+                <div class="col-md-6">
+                  <img src="imagenes/imagenes_pag2/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt="Sobre Nosotros" class="img-fluid rounded">
+                </div>
+              </div>
             </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.166577813173!2d-74.09538362026493!3d4.56405713101569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f989243ef923b%3A0x2afa7d6d71234f60!2syardley%20peluqueria%20unisex!5e0!3m2!1ses!2sco!4v1727808128059!5m2!1ses!2sco"
-                    width="500" height="450" style="border:1;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+          
+
+
+
+          <section id="location" class="py-5 bg-light">
+            <div class="container">
+              <div class="row justify-content-around align-items-center">
+                                <!-- Mapa -->
+                                <div class="col-md-6">
+                                    <div class="map-responsive">
+                                      <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.166577813173!2d-74.09538362026493!3d4.56405713101569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f989243ef923b%3A0x2afa7d6d71234f60!2syardley%20peluqueria%20unisex!5e0!3m2!1ses!2sco!4v1727808128059!5m2!1ses!2sco"
+                                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                  </div>
+                <!-- Información de ubicación -->
+                <div class="col-md-5 mb-4 mb-md-0">
+                  <h4 class="text-primary">Ubicación</h4>
+                  <h3 class="mb-3">Localización</h3>
+                  <ul class="list-unstyled">
+                    <li>Servicio de calidad con tiempos excepcionales</li>
+                    <li>Asesoría gratuita</li>
+                    <li>Atención especial en día de cumpleaños</li>
+                    <li>Plan preferencial</li>
+                  </ul>
+                  <a href="#contact" class="btn btn-outline-primary mt-3">Agenda con nosotros</a>
+                </div>
+
+              </div>
             </div>
-        </div>
+          </section>
+          
 
 
-        <div class="why">
-            <div class="reason">
-
+        <section class="products bg-secondary text-light">
+            <div class="container">
+              <!-- Encabezado de sección -->
+              <header class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>En Yaardley nos enorgullece ofrecer servicios de alta calidad para realzar tu estilo. ¡Descubre lo que tenemos para ti!</p>
+              </header>
+          
+              <!-- Lista de productos/servicios -->
+              <ul class="productos">
+                <li class="producto">
+                  <h3>Corte</h3>
+                  <figure>
+                    <img src="imagenes/imagenes_pag2/cabello.jpg" alt="Servicio de corte de cabello">
+                    <figcaption>
+                      <p class="descripcion_producto">Corte de cabello a la medida, ya sea con tijera o con máquina, para lograr el estilo deseado.</p>
+                      <p class="descripcion_precio">$10.000</p>
+                    </figcaption>
+                  </figure>
+                </li>
+          
+                <li class="producto">
+                  <h3>Barba</h3>
+                  <figure>
+                    <img src="imagenes/imagenes_pag2/barba.jpg" alt="Servicio de diseño de barba">
+                    <figcaption>
+                      <p class="descripcion_producto">Diseño y corte profesional de barba para un look impecable y moderno.</p>
+                      <p class="descripcion_precio">$5.000</p>
+                    </figcaption>
+                  </figure>
+                </li>
+          
+                <li class="producto">
+                  <h3>Cabello + Barba</h3>
+                  <figure>
+                    <img src="imagenes/imagenes_pag2/cabello+barba.jpg" alt="Servicio combinado de corte de cabello y barba">
+                    <figcaption>
+                      <p class="descripcion_producto">Paquete completo que combina corte y diseño tanto de cabello como de barba para un estilo integral.</p>
+                      <p class="descripcion_precio">$14.000</p>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+          
+              <!-- Llamado a la acción -->
+              <div class="call-to-action">
+                <a href="#contact" class="btn btn-primary">Reserva tu turno</a>
+              </div>
             </div>
+          </section>
+          
+        
 
-            
-
-        </div>
-
-        <div class="products">
-
-            <h4>¿que ofrecemos?</h4>
-
-        </div>
-
-        <div class="team">
-            <h4>¿nuestro equipo?</h4> </div>
+          <section id="team" class="py-5">
+            <div class="container">
+              <header class="text-center mb-5">
+                <h2>Nuestro Equipo</h2>
+                <p>Conoce a los profesionales que hacen posible <strong>Yardley</strong>.</p>
+              </header>
+              <div class="row">
+                <!-- Miembro 1 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="imagenes/imagenes_pag2/barber1.jpg" class="card-img-top" alt="Nombre del Miembro 1">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Carlos Angarita</h5>
+                      <p class="card-text">Estilista Senior</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Miembro 2 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="imagenes/imagenes_pag2/barber2.jpg" class="card-img-top" alt="Nombre del Miembro 2">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jose Rodriguez</h5>
+                      <p class="card-text">Barbero Profesional</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Miembro 3 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="imagenes/imagenes_pag2/barber3.jpg" class="card-img-top" alt="Nombre del Miembro 3">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Andres Zuleta</h5>
+                      <p class="card-text">Especialista en Color</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
 
 
 
     </main>
 
 
-    <footer>
-
-        <img src="imagenes/imagenes_pag1/inferior.png" alt="logo blanco pie de pagina">
+    <footer class="bg-secondary">
 
         <p>redes sociales</p>
 
