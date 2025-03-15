@@ -1,262 +1,297 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style_pagina2.css">
-    <link rel="stylesheet" href="css/style_pagina2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/encabezado.css">
-    <link rel="stylesheet" href="css/productos.css">
-    <link rel="stylesheet" href="css/carusel.css">
-    <link rel="stylesheet" href="css/style_pagina2.css">    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-    <title>BARBERIA YARDLEY- home</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbería Yardley - Home</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- AOS para animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    /* Mapa responsivo */
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  </style>
 </head>
+<body class="bg-gray-100 text-gray-900" onload="AOS.init()">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <a href="primerapagina_home.html" class="text-2xl font-bold">Yardley Barbería</a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="primerapagina_home.html" class="hover:text-gray-400">Home</a>
+        <a href="#services" class="hover:text-gray-400">Servicios</a>
+        <a href="#team" class="hover:text-gray-400">Equipo</a>
+        <a href="#ubicacion" class="hover:text-gray-400">Ubicación</a>
+        <a href="#contact" class="hover:text-gray-400">Contacto</a>
+      </nav>
+      <button class="btn btn-primary ml-4">Reserva ahora</button>
+    </div>
+  </header>
 
-<body>
-    <header>
-
-
-        <nav class="navbar navbar-expand-lg bg-secondary ">
-            <div class="container-fluid">
-              <!-- Logo dentro de navbar-brand con restricción de tamaño -->
-              <a class="navbar-brand" href="primerapagina_home.html">
-                <img src="imagenes/imagenes_pag1/yardley_logo.png" alt="Logo de la Barbería" class="logo img-fluid">
-              </a>
-              <!-- Botón hamburguesa para dispositivos móviles -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- Menú de navegación -->
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active text-light" aria-current="page" href="primerapagina_home.html">Home</a>
-                  <a class="nav-link text-light" href="pagina%202.html">Features</a>
-                  <a class="nav-link text-light" href="contactos.html">Pricing</a>
-                  <button class="btnActionCall btn-light btn-sm">Reserva ahora</button>
-                </div>
-              </div>
-            </div>
-          </nav>
-          
-
-
-
-    </header>
-
-
-
-    <main>
-
-
-
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagenes/imagenes_pag1/baner1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/imagenes_pag1/baner2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/imagenes_pag1/baner3.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+  <main>
+    <!-- Sección Hero -->
+    <section class="hero min-h-screen" style="background-image: url('imagenes/imagenes_pag1/baner1.jpg');">
+      <div class="hero-overlay bg-black bg-opacity-60"></div>
+      <div class="hero-content text-center text-white" data-aos="fade-up">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Bienvenido a Yardley</h1>
+          <p class="mb-5">Experiencia, estilo y profesionalismo en cada corte.</p>
+          <a href="#services" class="btn btn-primary">Ver Servicios</a>
         </div>
+      </div>
+    </section>
 
-        <section id="about-us" class="py-5 bg-secondary text-light">
-            <div class="container">
-              <div class="row align-items-center">
-                <!-- Texto descriptivo -->
-                <div class="col-md-6">
-                  <h2>Acerca de Nosotros</h2>
-                  <p>
-                    En <strong>Yardley</strong> nos dedicamos a brindar servicios de alta calidad,
-                    combinando tradición y modernidad para ofrecerte una experiencia única. Nuestro compromiso es
-                    realzar tu estilo con atención personalizada, asesoría gratuita y detalles que marcan la diferencia.
-                  </p>
-                </div>
-                <!-- Imagen representativa -->
-                <div class="col-md-6">
-                  <img src="imagenes/imagenes_pag2/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt="Sobre Nosotros" class="img-fluid rounded">
-                </div>
+    <!-- Acerca de Nosotros -->
+    <section id="about-us" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <h2 class="text-3xl font-bold mb-4 text-gray-800">Acerca de Nosotros</h2>
+          <p class="mb-4 text-gray-600">
+            En Yardley Barbería combinamos la tradición con las últimas tendencias para ofrecerte un servicio de alta calidad.
+            Nuestro equipo de profesionales se dedica a realzar tu imagen, ofreciéndote asesoría personalizada y un ambiente moderno y relajado.
+          </p>
+          <p class="mb-4 text-gray-600">Descubre una experiencia única en cada visita.</p>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <img src="imagenes/imagenes_pag2/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt="Sobre Nosotros" class="rounded-lg shadow-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="py-16 bg-gray-900 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Nuestros Servicios</h2>
+        <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
+          Servicios de alta calidad diseñados para resaltar tu estilo y personalidad.
+        </p>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="card bg-gray-800 shadow-xl" data-aos="zoom-in">
+            <div class="card-body">
+              <h3 class="card-title">Corte Clásico</h3>
+              <p>Corte de cabello con estilo tradicional y preciso, ideal para un look atemporal.</p>
+              <div class="mt-4">
+                <span class="badge badge-primary">Desde $12.000</span>
               </div>
             </div>
-          </section>
-          
-
-
-
-          <section id="location" class="py-5 bg-light">
-            <div class="container">
-              <div class="row justify-content-around align-items-center">
-                                <!-- Mapa -->
-                                <div class="col-md-6">
-                                    <div class="map-responsive">
-                                      <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.166577813173!2d-74.09538362026493!3d4.56405713101569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f989243ef923b%3A0x2afa7d6d71234f60!2syardley%20peluqueria%20unisex!5e0!3m2!1ses!2sco!4v1727808128059!5m2!1ses!2sco"
-                                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                  </div>
-                <!-- Información de ubicación -->
-                <div class="col-md-5 mb-4 mb-md-0">
-                  <h4 class="text-primary">Ubicación</h4>
-                  <h3 class="mb-3">Localización</h3>
-                  <ul class="list-unstyled">
-                    <li>Servicio de calidad con tiempos excepcionales</li>
-                    <li>Asesoría gratuita</li>
-                    <li>Atención especial en día de cumpleaños</li>
-                    <li>Plan preferencial</li>
-                  </ul>
-                  <a href="#contact" class="btn btn-outline-primary mt-3">Agenda con nosotros</a>
-                </div>
-
+          </div>
+          <div class="card bg-gray-800 shadow-xl" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-body">
+              <h3 class="card-title">Corte Moderno</h3>
+              <p>Diseño innovador para quienes buscan un estilo contemporáneo y único.</p>
+              <div class="mt-4">
+                <span class="badge badge-primary">Desde $15.000</span>
               </div>
             </div>
-          </section>
-          
-
-
-        <section class="products bg-secondary text-light">
-            <div class="container">
-              <!-- Encabezado de sección -->
-              <header class="section-header">
-                <h2>Nuestros Servicios</h2>
-                <p>En Yaardley nos enorgullece ofrecer servicios de alta calidad para realzar tu estilo. ¡Descubre lo que tenemos para ti!</p>
-              </header>
-          
-              <!-- Lista de productos/servicios -->
-              <ul class="productos">
-                <li class="producto">
-                  <h3>Corte</h3>
-                  <figure>
-                    <img src="imagenes/imagenes_pag2/cabello.jpg" alt="Servicio de corte de cabello">
-                    <figcaption>
-                      <p class="descripcion_producto">Corte de cabello a la medida, ya sea con tijera o con máquina, para lograr el estilo deseado.</p>
-                      <p class="descripcion_precio">$10.000</p>
-                    </figcaption>
-                  </figure>
-                </li>
-          
-                <li class="producto">
-                  <h3>Barba</h3>
-                  <figure>
-                    <img src="imagenes/imagenes_pag2/barba.jpg" alt="Servicio de diseño de barba">
-                    <figcaption>
-                      <p class="descripcion_producto">Diseño y corte profesional de barba para un look impecable y moderno.</p>
-                      <p class="descripcion_precio">$5.000</p>
-                    </figcaption>
-                  </figure>
-                </li>
-          
-                <li class="producto">
-                  <h3>Cabello + Barba</h3>
-                  <figure>
-                    <img src="imagenes/imagenes_pag2/cabello+barba.jpg" alt="Servicio combinado de corte de cabello y barba">
-                    <figcaption>
-                      <p class="descripcion_producto">Paquete completo que combina corte y diseño tanto de cabello como de barba para un estilo integral.</p>
-                      <p class="descripcion_precio">$14.000</p>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-          
-              <!-- Llamado a la acción -->
-              <div class="call-to-action">
-                <a href="#contact" class="btn btn-primary">Reserva tu turno</a>
+          </div>
+          <div class="card bg-gray-800 shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-body">
+              <h3 class="card-title">Diseño de Barba</h3>
+              <p>Definición y estilizado de barba para un acabado impecable.</p>
+              <div class="mt-4">
+                <span class="badge badge-primary">Desde $7.000</span>
               </div>
             </div>
-          </section>
-          
-        
-
-          <section id="team" class="py-5">
-            <div class="container">
-              <header class="text-center mb-5">
-                <h2>Nuestro Equipo</h2>
-                <p>Conoce a los profesionales que hacen posible <strong>Yardley</strong>.</p>
-              </header>
-              <div class="row">
-                <!-- Miembro 1 -->
-                <div class="col-md-4 mb-4">
-                  <div class="card">
-                    <img src="imagenes/imagenes_pag2/barber1.jpg" class="card-img-top" alt="Nombre del Miembro 1">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Carlos Angarita</h5>
-                      <p class="card-text">Estilista Senior</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Miembro 2 -->
-                <div class="col-md-4 mb-4">
-                  <div class="card">
-                    <img src="imagenes/imagenes_pag2/barber2.jpg" class="card-img-top" alt="Nombre del Miembro 2">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Jose Rodriguez</h5>
-                      <p class="card-text">Barbero Profesional</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Miembro 3 -->
-                <div class="col-md-4 mb-4">
-                  <div class="card">
-                    <img src="imagenes/imagenes_pag2/barber3.jpg" class="card-img-top" alt="Nombre del Miembro 3">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Andres Zuleta</h5>
-                      <p class="card-text">Especialista en Color</p>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <!-- Servicios adicionales -->
+          <div class="card bg-gray-800 shadow-xl" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-body">
+              <h3 class="card-title">Afeitado Tradicional</h3>
+              <p>Disfruta de un afeitado clásico con toallas calientes y productos premium.</p>
+              <div class="mt-4">
+                <span class="badge badge-primary">Desde $10.000</span>
               </div>
             </div>
-          </section>
-          
+          </div>
+          <div class="card bg-gray-800 shadow-xl" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card-body">
+              <h3 class="card-title">Tratamiento Capilar</h3>
+              <p>Revitaliza y nutre tu cabello con tratamientos exclusivos.</p>
+              <div class="mt-4">
+                <span class="badge badge-primary">Desde $20.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-gray-800 shadow-xl" data-aos="zoom-in" data-aos-delay="500">
+            <div class="card-body">
+              <h3 class="card-title">Coloración y Mechas</h3>
+              <p>Transforma tu imagen con técnicas avanzadas de coloración.</p>
+              <div class="mt-4">
+                <span class="badge badge-primary">Desde $18.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="team" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Nuestro Equipo</h2>
+        <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
+          Conoce a los expertos que transforman tu estilo.
+        </p>
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div class="card bg-white shadow-xl" data-aos="flip-left">
+            <figure class="px-4 pt-4">
+              <img src="imagenes/imagenes_pag2/barber1.jpg" alt="Carlos Gómez" class="rounded-full w-32 h-32 object-cover" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Carlos Gómez</h3>
+              <p>Cortes clásicos y modernos.</p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl" data-aos="flip-left" data-aos-delay="100">
+            <figure class="px-4 pt-4">
+              <img src="imagenes/imagenes_pag2/barber2.jpg" alt="Andrés Pérez" class="rounded-full w-32 h-32 object-cover" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Andrés Pérez</h3>
+              <p>Especialista en barbas y afeitados.</p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl" data-aos="flip-left" data-aos-delay="200">
+            <figure class="px-4 pt-4">
+              <img src="imagenes/imagenes_pag2/barber3.jpg" alt="Luis Rodríguez" class="rounded-full w-32 h-32 object-cover" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Luis Rodríguez</h3>
+              <p>Coloración y estilización.</p>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl" data-aos="flip-left" data-aos-delay="300">
+            <figure class="px-4 pt-4">
+              <img src="imagenes/imagenes_pag2/barber1.jpg" alt="Miguel Sánchez" class="rounded-full w-32 h-32 object-cover" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title">Miguel Sánchez</h3>
+              <p>Estilista y experto en tendencias.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="card bg-white shadow-xl" data-aos="fade-up">
+          <div class="card-body">
+            <h2 class="card-title">Ubicación</h2>
+            <p class="mb-4">Visítanos en nuestra ubicación para disfrutar de la mejor experiencia en barbería.</p>
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.166577813173!2d-74.09538362026493!3d4.56405713101569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f989243ef923b%3A0x2afa7d6d71234f60!2syardley%20peluqueria%20unisex!5e0!3m2!1ses!2sco!4v1727808128059!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="mt-4">
+              <a href="https://www.google.com/maps" target="_blank" class="btn btn-outline btn-primary">Ver en Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+<!-- Testimonios -->
+<section id="testimonials" class="py-16 bg-gray-900 text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Testimonios</h2>
+    <p class="mb-8" data-aos="fade-up" data-aos-delay="200">Lo que dicen nuestros clientes sobre nosotros.</p>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="card bg-gray-800 shadow-xl" data-aos="fade-up">
+        <div class="card-body">
+          <p class="italic">"Una experiencia única y profesional. El ambiente, la atención y el resultado superaron mis expectativas."</p>
+          <h4 class="mt-4 font-bold text-primary">– Juan Martínez</h4>
+        </div>
+      </div>
+      <div class="card bg-gray-800 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-body">
+          <p class="italic">"El mejor servicio de barbería que he probado. Altamente recomendado para quienes buscan estilo y calidad."</p>
+          <h4 class="mt-4 font-bold text-primary">– María Rodríguez</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
-    </main>
+<!-- Contacto -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Contáctanos</h2>
+    <p class="mb-8" data-aos="fade-up" data-aos-delay="200">Déjanos un mensaje o agenda una cita para transformar tu imagen.</p>
+    <form class="card max-w-lg mx-auto bg-white shadow-xl" data-aos="zoom-in">
+      <div class="card-body">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text text-gray-700">Nombre</span>
+          </label>
+          <input type="text" placeholder="Tu Nombre" class="input input-bordered bg-white text-gray-900 border-gray-300 focus:border-blue-500 focus:outline-none" />
+        </div>
+        <div class="form-control mt-4">
+          <label class="label">
+            <span class="label-text text-gray-700">Correo</span>
+          </label>
+          <input type="email" placeholder="Tu Correo" class="input input-bordered bg-white text-gray-900 border-gray-300 focus:border-blue-500 focus:outline-none" />
+        </div>
+        <div class="form-control mt-4">
+          <label class="label">
+            <span class="label-text text-gray-700">Mensaje</span>
+          </label>
+          <textarea placeholder="Tu Mensaje" class="textarea textarea-bordered bg-white text-gray-900 border-gray-300 focus:border-blue-500 focus:outline-none"></textarea>
+        </div>
+        <div class="form-control mt-6">
+          <button class="btn btn-primary">Enviar Mensaje</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 
 
-    <footer class="bg-secondary">
+  </main>
 
-        <p>redes sociales</p>
-
-        <p class="textcopy">felipe russi 2020</p>
-
-    </footer>
-
-
-
-
+  <!-- Footer -->
+  <footer class="footer p-10 bg-gray-900 text-white">
+    <div>
+      <span class="footer-title">Yardley Barbería</span> 
+      <p>Transformamos tu imagen con estilo y pasión.</p>
+    </div> 
+    <div>
+      <span class="footer-title">Contacto</span> 
+      <p>Calle Falsa 123, Ciudad</p>
+      <p>+57 123 4567</p>
+      <p>info@yardleybarberia.com</p>
+    </div> 
+    <div>
+      <span class="footer-title">Síguenos</span> 
+      <div class="grid grid-flow-col gap-4">
+        <a href="#">Facebook</a> 
+        <a href="#">Instagram</a> 
+        <a href="#">Twitter</a>
+      </div>
+    </div> 
+    <div>
+      <span class="footer-title">Legal</span> 
+      <p>&copy; 2025 Yardley Barbería - Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
-
-
 </html>
